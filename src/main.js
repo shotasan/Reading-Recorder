@@ -6,6 +6,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// $httpプロパティを追加
+Vue.prototype.$http = (url, opts) => fetch(url, opts)
+
 new Vue({
   store,
   router,
