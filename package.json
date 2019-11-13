@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^3.3.2",
     "element-ui": "^2.4.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuex-persistedstate": "^2.7.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
