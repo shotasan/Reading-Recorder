@@ -60,7 +60,10 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    [UPDATE_CURRENT]({ commit }, payload) {
+      commit(UPDATE_CURRENT, payload)
   },
-  modules: {
+    [UPDATE_BOOK]({ commit }, payload) {
+      commit(UPDATE_BOOK, payload)
   }
 })
