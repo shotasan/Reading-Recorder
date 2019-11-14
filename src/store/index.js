@@ -43,7 +43,7 @@ export default new Vuex.Store({
   },
   mutations: {
     // 編集中の書籍（current）を更新する
-    [UPDATE_BOOK](state, payload) {
+    [UPDATE_CURRENT](state, payload) {
       state.current = payload
     },
     // レビュー情報を更新（引数payloaｄは更新された書籍情報）
