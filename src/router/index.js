@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import BookSearch from './component/BookSearch.vue'
-import BookForm from './component/BookForm.vue'
-import Home from './component/Home.vue'
+import BookSearch from '../components/BookSearch.vue'
+import BookForm from '../components/BookForm.vue'
+import Home from '../components/Home.vue'
 
 Vue.use(VueRouter)
 
