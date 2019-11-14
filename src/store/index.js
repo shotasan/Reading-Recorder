@@ -42,6 +42,22 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    // 編集中の書籍（current）を更新する
+    [UPDATE_BOOK](state, payload) {
+      state.current = payload
+    },
+    // レビュー情報を更新（引数payloaｄは更新された書籍情報）
+    [UPDATE_BOOK](state, payload) {
+      // id値（payload.id）で既存のレビューを検索
+      let b = this.getters.getBookById(payload.id)
+      if (b) {
+        // 既存のレビュー情報がある場合は更新情報（payloaｄ）で上書き
+        Object.assign(b, payload)
+      } else {
+        // 既存の情報がなければ、新規としてstate.booksに追加
+        state.books.push(payload)
+      }
+    }
   },
   actions: {
   },
