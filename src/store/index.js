@@ -62,8 +62,13 @@ export default new Vuex.Store({
   actions: {
     [UPDATE_CURRENT]({ commit }, payload) {
       commit(UPDATE_CURRENT, payload)
-  },
+    },
     [UPDATE_BOOK]({ commit }, payload) {
       commit(UPDATE_BOOK, payload)
-  }
+    }
+  },
+  plugins: [createPersistedState({
+    key: 'reading-recorder',
+    storage: localStorage
+  })]
 })
