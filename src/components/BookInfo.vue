@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { mapAvtions, mapActions } from "vuex";
+import { mapActions } from "vuex";
 import { UPDATE_CURRENT } from "@/mutation_type";
 
 export default {
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style scoped>
 .linkable:hover {
   cursor: ponter;
   background-color: #ff9;
