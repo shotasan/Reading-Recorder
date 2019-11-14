@@ -41,7 +41,35 @@ export default {
 
 <style scoped>
 .linkable:hover {
-  cursor: ponter;
+  cursor: pointer;
   background-color: #ff9;
+}
+
+.image {
+  float: left;
+}
+
+.image img {
+  height: 180px;
+}
+
+.details {
+  float: left;
+}
+
+.details li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.clearfix {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 </style>
