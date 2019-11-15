@@ -30,7 +30,7 @@ export default {
     };
   },
   // ローカルコンポーネントを登録
-  componets: {
+  components: {
     BookInfo
   },
   // ゲッターを算出プロパティに紐付け

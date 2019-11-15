@@ -39,14 +39,14 @@ export default {
           this.books = [];
           for (let b of data.items) {
             let authors = b.volumeInfo.authors;
-            let price = b.saleInfo.lisPrice;
+            let price = b.saleInfo.listPrice;
             let img = b.volumeInfo.imageLinks;
             this.books.push({
               id: b.id,
               title: b.volumeInfo.title,
               author: authors ? authors.join(",") : "",
               price: price ? price.amount : "-",
-              publicher: b.volumeInfo.publisher,
+              publisher: b.volumeInfo.publisher,
               published: b.volumeInfo.publishedDate,
               image: img ? img.smallThumbnail : ""
             });
